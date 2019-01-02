@@ -19,7 +19,7 @@ class School
   end
 
   def sort
-    @roster.map do |students|
+    @roster.map do |key, students|
       students.sort
     end
   end
