@@ -10,8 +10,11 @@ class School
     if !@roster.key?(grade)
       @roster[grade] = []
     end
-    
+
     @roster[grade] << student
   end
 
+  def grade(grade)
+    @roster[grade]
+  end
 end
